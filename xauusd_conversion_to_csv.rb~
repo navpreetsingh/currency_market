@@ -1,8 +1,8 @@
 require 'csv'
-file = File.read("xauusd_1_min").split("\n")
+file = File.read("xauusd_1_min_9th_dec").split("\n")
 file = file.map{|f| f.split("\t")}
 
-CSV.open("xauusd_1_min.csv", "wb") do |csv|
+CSV.open("xauusd_1_min_9.csv", "wb") do |csv|
 	file.each do |f|
 		csv << f
 	end
